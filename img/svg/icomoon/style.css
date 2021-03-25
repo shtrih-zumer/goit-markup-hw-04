@@ -14,3 +14,35 @@ Single-colored icons can be modified like so:
   color: red;
 }
 ========================================== */
+
+.icon-email {
+  width: 1.3330078125em;
+}
+
+.icon-logo_1 {
+  width: 0.900390625em;
+}
+
+.icon-logo_2 {
+  width: 0.76953125em;
+}
+
+.icon-logo_3 {
+  width: 0.953125em;
+}
+
+.icon-logo_4 {
+  width: 1.8603515625em;
+}
+
+.icon-logo_5 {
+  width: 1.2548828125em;
+}
+
+.icon-logo_6 {
+  width: 1.9345703125em;
+}
+
+.icon-tel {
+  width: 0.625em;
+}

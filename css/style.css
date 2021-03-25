@@ -8,6 +8,8 @@
     --bg-light-gray: rgb(245, 244, 250);    /*Світло сірий фон*/
     --bg-dark-blue: rgb(47, 48, 58);        /*Темно синий фон*/
     --txt-a-blinck: rgba(255, 255, 255, 0.6);
+
+    --bg-while-blinck: rgba(255, 255, 255, 0.1);
 }
 
 /*=*=*=*=*=*=*=*=*=*= Основні налаштування для сайту =*=*=*=*=*=*=*=*=*=*/
@@ -34,7 +36,7 @@ ul{
     margin: 0;                     /*Прибираємо маркер в списках*/
 }
 
-.ba{
+.no-gap{
     display: block;
 }
 
@@ -65,7 +67,7 @@ ul{
     padding: 0 15px;
     margin: 0 auto;
     width: 1200px;
-    outline: 1px solid tomato;
+    /*outline: 1px solid tomato;*/
 }
 
 /*=*=*=*=*=*=*=*=*=*= /Основні налаштування =*=*=*=*=*=*=*=*=*=*/
@@ -102,14 +104,17 @@ ul{
     margin-right: 50px;
 }
 
-.site-nav .menu{
-    display: block;
+.menu{
+    display: inline-block;
     padding-top: 32px;
     padding-bottom: 32px;
+    vertical-align: top;
 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.5;
+
+    /*outline: 1px solid red;*/
 }
 
 .auth-nav{
@@ -144,6 +149,10 @@ ul{
     color: var(--txt-bg-while);
 }
 
+.logotip-footer:hover{
+    color: var(--txt-bg-while);
+}
+
 .cont-text{
     font-weight: 400;
     font-size: 14px;
@@ -167,5 +176,64 @@ ul{
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.container.flex-cont{
+    display: flex;
+}
+
+.connect{
+    margin-left: 70px;
+    margin-right: auto;
+
+    /*outline: 1px solid greenyellow;*/
+}
+
+.zagolovok-iii-level{
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--txt-bg-while);
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.connect-link{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--bg-while-blinck);
+    color: var(--txt-bg-while);
+
+}
+
+.connect-link:hover{
+    background-color: var(--txt-bg-blue);
+    color: var(--txt-bg-while);
+}
+
+.link-icon{
+    fill: currentColor;   
+}
+
+.connect-menu{
+    display: flex;
+}
+
+.connect-menu .item:not(:last-child){
+    margin-right: 10px;
+}
 /*========== /Блок footer==========*/
 
+/*========== Блок icon==========*/
+.a-icon{
+    fill: currentColor;
+    margin-right: 10px;
+}
+/*========== /Блок icon==========*/

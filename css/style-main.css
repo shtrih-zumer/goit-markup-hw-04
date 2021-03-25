@@ -4,18 +4,22 @@
     --txt-content: rgb(117, 117, 117);      /*Додатковий колір тексту*/
     --bg-light-gray: rgb(245, 244, 250);    /*Світло сірий фон*/
     --txt-a-blinck: rgba(255, 255, 255, 0.6);
+
+    --network-link: rgba(175, 177, 184);
 }
 
 /*=== Розширена шапка ===*/
 .head-h1{
-    margin-top: 0;
+    margin: 0 auto;
     margin-bottom: 30px;
     color: var(--txt-bg-while);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    max-width: 696px;
+    text-transform: uppercase;
 
-    outline: 1px solid blue;
+    /*outline: 1px solid blue;*/
 }
 
 .head-button{
@@ -50,7 +54,7 @@
 }
 
 .properties .item{
-    width: calc((100% - 90px) / 4);
+    flex-basis: calc(100% / 4 - 30px);
 }
 
 .properties .item::before{
@@ -123,7 +127,7 @@
 }
 
 .foto-work .item{
-    width: calc((100% - 60px) / 3);
+    flex-basis: calc(100% / 3 -30px);
 }
 
 .foto-work .item:not(:last-child){
@@ -137,7 +141,7 @@
 }
 
 .card .item{
-    width: calc((100% - 90px) / 4);
+    flex-basis: calc(100% / 4 - 30px);
 }
 
 .card .item:not(:last-child){
@@ -157,7 +161,7 @@
 
 .card-content{
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 
     font-weight: 400;
     font-size: 16px;
@@ -169,8 +173,14 @@
 
 .card-img{
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0;
 }
+
+.card-div-content{
+    padding: 30px 32px;
+}
+
+
 /*=== /Карточки сотрудников ===*/
 
 /*========== /Блок overlay==========*/
@@ -187,6 +197,69 @@
     padding-top: 200px;
     padding-bottom: 200px;
 
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 }
 /*========== /Блок footer==========*/
+
+/*========== Блок icon==========*/
+.network{
+    display: flex;
+}
+
+.card-link{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    
+    color: var(--network-link);
+
+}
+
+.card-link:hover{
+    background-color: var(--txt-bg-blue);
+    color: var(--txt-bg-while);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+
+.network .item:not(:last-child){
+    margin-right: 10px;
+}
+
+/*========== /Блок icon==========*/
+
+/*========== Блок vip==========*/
+.vip{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vip-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    
+    width: 170px;
+    height: 90px;
+    border: 1px solid var(--network-link);
+    box-sizing: border-box;
+    border-radius: 4px;
+    
+    color: var(--network-link);
+}
+
+.vip-box:hover{
+    color: var(--txt-bg-blue);
+    border-color: var(--txt-bg-blue);
+}
+
+.vip .item:not(:last-child){
+    margin-right: 30px;
+}
+/*========== /Блок vip==========*/
