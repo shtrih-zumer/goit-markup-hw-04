@@ -26,8 +26,10 @@ a {
 }
 
 a:hover,
-a.info:hover{
+a.info:hover,
+a:focus{
     color: var(--txt-bg-blue);
+    outline: none;
 }
 
 ul{
@@ -117,6 +119,23 @@ ul{
     /*outline: 1px solid red;*/
 }
 
+/*=== Контактні інфо ===*/
+.menu-cont{
+    display: flex;
+    align-items: center;
+    
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--txt-content);
+    font-style: normal;
+}
+
+/*=== /Контактні інфо ===*/
+
 .auth-nav{
     display: flex;
     margin-left: auto;
@@ -126,13 +145,6 @@ ul{
     margin-left: 50px;
 }
 /*=== /Навігація ===*/
-
-/*=== Контактні інфо ===*/
-.cont{
-    color: var(--txt-content);
-    font-style: normal;
-}
-/*=== /Контактні інфо ===*/
 
 /*========== /Блок header==========*/
 
@@ -213,7 +225,7 @@ ul{
 
 }
 
-.connect-link:hover{
+.connect-link:hover, .connect-link:focus{
     background-color: var(--txt-bg-blue);
     color: var(--txt-bg-while);
 }
